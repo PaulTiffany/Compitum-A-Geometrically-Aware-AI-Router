@@ -1,0 +1,110 @@
+schema: compitum-bridge-1.0
+entries:
+- code_component: SymbolicManifoldMetric
+  label: eq:bk2_metric_spd_mahalanobis
+  concept_title: SPD Mahalanobis Distance
+  implementation_path: src\compitum\metric.py
+  validation_path: ''
+  principia_symbolica_ref: definition:bk1_kernel_based_bounded_symbolic_approximation
+  bridgeyaml_block: "% --- BRIDGEYAML BEGIN ---
+% label: eq:bk2_metric_spd_mahalanobis
+% implementation_path: src\\compitum\\metric.py
+% validation_path: 
+% principia_symbolica_ref: definition:bk1_kernel_based_bounded_symbolic_approximation
+% --- BRIDGEYAML END ---"
+- code_component: BoundaryAnalyzer
+  label: sec:bk2_boundary_entropy_gap_test
+  concept_title: Boundary Entropy-Gap Test
+  implementation_path: src\compitum\boundary.py
+  validation_path: ''
+  principia_symbolica_ref: null
+  bridgeyaml_block: "% --- BRIDGEYAML BEGIN ---
+% label: sec:bk2_boundary_entropy_gap_test
+% implementation_path: src\\compitum\\boundary.py
+% validation_path: 
+% principia_symbolica_ref: null
+% --- BRIDGEYAML END ---"
+- code_component: CoherenceFunctional
+  label: definition:bk2_coherence_kde_log_evidence
+  concept_title: Coherence via KDE Log-Evidence
+  implementation_path: src\compitum\coherence.py
+  validation_path: ''
+  principia_symbolica_ref: definition:bk4_coherence_metric
+  bridgeyaml_block: "% --- BRIDGEYAML BEGIN ---
+% label: definition:bk2_coherence_kde_log_evidence
+% implementation_path: src\\compitum\\coherence.py
+% validation_path: 
+% principia_symbolica_ref: definition:bk4_coherence_metric
+% --- BRIDGEYAML END ---"
+- code_component: SRMFController
+  label: theorem:bk2_srmf_update_stability
+  concept_title: Lyapunov Stability of SRMF Updates
+  implementation_path: src\compitum\control.py
+  validation_path: ''
+  principia_symbolica_ref: theorem:bk5_symbolic_coherence_conservation
+  bridgeyaml_block: "% --- BRIDGEYAML BEGIN ---
+% label: theorem:bk2_srmf_update_stability
+% implementation_path: src\\compitum\\control.py
+% validation_path: 
+% principia_symbolica_ref: theorem:bk5_symbolic_coherence_conservation
+% --- BRIDGEYAML END ---"
+- code_component: SymbolicFreeEnergy
+  label: definition:bk2_symbolic_free_energy
+  concept_title: Symbolic Free Energy Routing Criterion
+  implementation_path: src\compitum\energy.py
+  validation_path: ''
+  principia_symbolica_ref: definition:bk7_symbolic_free_energy
+  bridgeyaml_block: "% --- BRIDGEYAML BEGIN ---
+% label: definition:bk2_symbolic_free_energy
+% implementation_path: src\\compitum\\energy.py
+% validation_path: 
+% principia_symbolica_ref: definition:bk7_symbolic_free_energy
+% --- BRIDGEYAML END ---"
+- code_component: ReflectiveConstraintSolver
+  label: proposition:bk2_constraints_lp_shadow_prices
+  concept_title: Shadow Prices for Linear Constraints
+  implementation_path: src\compitum\constraints.py
+  validation_path: ''
+  principia_symbolica_ref: proposition:bk7_power_uncertainty_duality
+  bridgeyaml_block: "% --- BRIDGEYAML BEGIN ---
+% label: proposition:bk2_constraints_lp_shadow_prices
+% implementation_path: src\\compitum\\constraints.py
+% validation_path: 
+% principia_symbolica_ref: proposition:bk7_power_uncertainty_duality
+% --- BRIDGEYAML END ---"
+- code_component: CompitumRouter
+  label: alg:bk2_router_selection_entropy_gap
+  concept_title: Model Selection under Constraints and Coherence
+  implementation_path: src\compitum\router.py
+  validation_path: ''
+  principia_symbolica_ref: null
+  bridgeyaml_block: "% --- BRIDGEYAML BEGIN ---
+% label: alg:bk2_router_selection_entropy_gap
+% implementation_path: src\\compitum\\router.py
+% validation_path: 
+% principia_symbolica_ref: null
+% --- BRIDGEYAML END ---"
+- code_component: ProductionPGDExtractor
+  label: sec:bk2_pgd_feature_extractor
+  concept_title: Production PGD Feature Extractor
+  implementation_path: src\compitum\pgd.py
+  validation_path: ''
+  principia_symbolica_ref: null
+  bridgeyaml_block: "% --- BRIDGEYAML BEGIN ---
+% label: sec:bk2_pgd_feature_extractor
+% implementation_path: src\\compitum\\pgd.py
+% validation_path: 
+% principia_symbolica_ref: null
+% --- BRIDGEYAML END ---"
+- code_component: CalibratedPredictor
+  label: sec:bk2_calibrated_predictors
+  concept_title: Calibrated Predictors for Utility Estimation
+  implementation_path: src\compitum\predictors.py
+  validation_path: ''
+  principia_symbolica_ref: null
+  bridgeyaml_block: "% --- BRIDGEYAML BEGIN ---
+% label: sec:bk2_calibrated_predictors
+% implementation_path: src\\compitum\\predictors.py
+% validation_path: 
+% principia_symbolica_ref: null
+% --- BRIDGEYAML END ---"
